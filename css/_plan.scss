@@ -1,0 +1,95 @@
+.plans {
+  background-color: $background-color;
+  padding: 50px;
+  &-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 800;
+    color: $heading-color;
+  }
+  &-text {
+    padding: 0 26%;
+  }
+}
+.plan {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0 5%;
+  &-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-heading {
+    font-size: 18px;
+    margin: 35px 0;
+    font-weight: 800;
+    color: $heading-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-package {
+    padding: 0 4rem;
+  }
+  &-body {
+    display: flex;
+    justify-content: last baseline;
+    align-items: center;
+    gap: 0 1.5rem;
+    font-size: 14px;
+    &-icon {
+      color: $green-color;
+    }
+  }
+  &-cost {
+    color: $heading-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid #f53838;
+    margin: 0 65px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: $primary-color;
+    font-size: 17px;
+    font-weight: 800;
+  }
+  &-block {
+    border: solid 2px $gray-color;
+    border-radius: 10px;
+    padding: 85px 0;
+    display: grid;
+  }
+}
+@media screen and (max-width:1000px) {
+  .plans {
+    padding: 20px 1%;
+    
+  }
+  .plan {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1%;
+    align-items: center;
+  }
+  .plan-block {
+    margin-bottom: 20px;
+    padding: 20px 0;
+  }
+  .plan-heading {
+    margin: 10px 0;
+  }
+  .plan-body-text {
+    margin: 5px;
+  }
+}

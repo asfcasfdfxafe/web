@@ -1,0 +1,43 @@
+.feature {
+  display: flex;
+  margin-top: 7rem;
+  gap: 0 3rem;
+  margin-bottom: 3rem;
+  padding: 0 6%;
+  &-heading {
+    font-size: 2.02em;
+    font-weight: 800;
+    color: $heading-color;
+    line-height: 1.3;
+  }
+  &-text {
+    line-height: 1.75;
+    font-weight: 500;
+    margin: 2.5rem 0;
+  }
+  &-check {
+    display: flex;
+    gap: 0 0.85rem;
+    &-icon {
+      color: #2fab73;
+      font-size: 20px;
+    }
+  }
+  &-checks {
+    display: grid;
+    gap: 1.75rem 0;
+  }
+}
+@media screen and (max-width:1000px) {
+  .feature {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1%;
+    align-items: center;
+  }
+  .feature-checks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

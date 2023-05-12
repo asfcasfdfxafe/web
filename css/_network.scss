@@ -1,0 +1,38 @@
+.network {
+  &-text {
+    padding: 0 28%;
+  }
+  &-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 0;
+  }
+  &-social {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    &-amazon {
+      width: 200px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width:1000px) {
+  .network-image img {
+    width: 100%;
+  }
+  .network-social {
+    flex-wrap: wrap;
+  }
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social img{
+    width: 8rem;
+  }
+}
